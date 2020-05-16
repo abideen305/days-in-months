@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+   <script type = "text/javascript" src="main.js">
+</script>
+</head>
+
+    <body> 
+        <section class="section-dark">
+
+            <h1>  
+                Day 16 : Days in month 
+            </h1> 
+
+        </section>   
+        <section class="section-light">
+
+            <p id = "GFG_UP"> </p> 
+          
+            <button class="button" onclick = "GFG_Fun()"> <span class="clc"> click here  </span>  </button> 
+              
+            <p id = "GFG_DOWN"> 
+            </p> 
+        </section>
+
+
+
+        <footer class="logo">
+            &copy;Abideen Muhammed. All rights reserved.
+        </footer>
+       
+          
+ <script>
+     var up = document.getElementById('GFG_UP'); 
+  
+  up.innerHTML = "Click on button to get the" 
+      + " number of days in specified month"; 
+        
+  var down = document.getElementById('GFG_DOWN');  
+    
+  function daysInMonth (month, year) { 
+      return new Date(year, month, 0).getDate(); 
+  } 
+    
+  function GFG_Fun() { 
+      var date = new Date(); 
+      var month = 5; 
+      var year = 2020; 
+      down.innerHTML =    "Number of days in " + month 
+                   + "th month of the year " + year 
+                   +" is "+ daysInMonth(month, year); 
+  }   
+  
+ </script>      
+</body>
+</html>
